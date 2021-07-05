@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/Windows-97/windows-97#readme",
   "dependencies": {
-    "discord.js": "^12.5.3"
+    "discord.js": "^12.5.3",
+    "systeminformation": "^5.7.7"
   }
 }

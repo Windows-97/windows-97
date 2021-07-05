@@ -14,6 +14,7 @@ for (const file of commandFiles) {
 
 client.once('ready', () => {
         console.log("Ready. Current Prefix: " + `${prefix}`);
+        client.user.setActivity(`on ${client.guilds.cache.size} servers`)
 });
 
 client.on('message', message => {
