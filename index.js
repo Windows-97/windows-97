@@ -28,7 +28,12 @@ client.on('message', message => {
                 client.commands.get(command).execute(message, args);
         } catch (error) {
                 console.log(error)
-                message.reply('ERROR')
+                const errorEmbed = new Discord.MessageEmbed()
+                    .setColor('0xFF0000')
+                    .setTitle('ERROR')
+                    .setDescription('An unknown error occurred')
+                    .setThumbnail('https://windows-97.github.io/resources/Error.png')
+                message.channel.send(errorEmbed);     
         }
 });
 
